@@ -18,14 +18,12 @@ ActiveRecord::Schema.define(version: 2024_05_08_200620) do
   create_table "expenses", force: :cascade do |t|
     t.string "name"
     t.decimal "amount"
-    t.string "timestamps"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
 
   create_table "roommates", force: :cascade do |t|
     t.string "name"
-    t.string "timestamps"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
