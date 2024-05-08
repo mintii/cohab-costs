@@ -5,3 +5,26 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+household = Household.create(
+  name: "Chipmunks"
+)
+
+Roommate.create(
+  name: "Alvin",
+  household: household
+)
+Roommate.create(
+  name: "Simon",
+  household: household
+)
+Roommate.create(
+  name: "Theodore",
+  household: household
+)
+
+Expense.create(
+  household: household,
+  name: "Music Instruments",
+  amount: 300.28
+)
