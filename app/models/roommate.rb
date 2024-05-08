@@ -1,0 +1,2 @@
+class Roommate < ApplicationRecord
+end
